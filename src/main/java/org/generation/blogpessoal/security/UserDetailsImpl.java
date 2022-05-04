@@ -21,22 +21,23 @@ public class UserDetailsImpl implements UserDetails {
 
 	}
 
-	@Override
-	public Collection<? extends GrantedAuthority> getAuthorities() {
-		return authorities;
-	}
-
 	public UserDetailsImpl() {
+		
 	}
 
 	@Override
 	public String getPassword() {
 		return password;
 	}
-
+	
 	@Override
 	public String getUsername() {
 		return userName;
+	}
+
+	@Override
+	public Collection<? extends GrantedAuthority> getAuthorities() {
+		return authorities;
 	}
 
 	@Override
