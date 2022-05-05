@@ -35,7 +35,7 @@ public class Usuario {
 	@NotNull
 	private String senha;
 	
-	@Size(min = 0, max = 5000)
+	@Size(max = 5000)
 	private String foto;
 
 	private String tipo;
